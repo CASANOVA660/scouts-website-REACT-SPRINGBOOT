@@ -9,7 +9,7 @@ import Events from './pages/Events';
 
 function App() {
   return (
-    <Router>
+    <Router basename="/scouts-website-REACT-SPRINGBOOT">
       <div className="min-h-screen bg-gray-50">
         <Navbar />
         <Routes>
