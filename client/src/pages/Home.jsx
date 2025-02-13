@@ -8,50 +8,58 @@ export default function Home() {
   // Add this near the top of your component where other state is defined
   const imagess = [
     {
-      main: '/images/camp.jpg',
-      thumbnail: '/images/camp.jpg',
+      main: '/scouts-website-REACT-SPRINGBOOT/images/camp.jpg',
+      thumbnail: '/scouts-website-REACT-SPRINGBOOT/images/camp.jpg',
       caption: 'Scout Camp Adventures'
     },
     {
-      main: '/images/im1.jpg',
-      thumbnail: '/images/im1.jpg',
+      main: '/scouts-website-REACT-SPRINGBOOT/images/im1.jpg',
+      thumbnail: '/scouts-website-REACT-SPRINGBOOT/images/im1.jpg',
       caption: 'Leadership Training'
+
     },
     {
-      main: '/images/im2.jpg',
-      thumbnail: '/images/im2.jpg',
+      main: '/scouts-website-REACT-SPRINGBOOT/images/im2.jpg',
+      thumbnail: '/scouts-website-REACT-SPRINGBOOT/images/im2.jpg',
       caption: 'Community Service'
+
     },
     {
-      main: '/images/im3.jpg',
-      thumbnail: '/images/im3.jpg',
+      main: '/scouts-website-REACT-SPRINGBOOT/images/im3.jpg',
+      thumbnail: '/scouts-website-REACT-SPRINGBOOT/images/im3.jpg',
       caption: 'Team Building'
+
     },
     {
-      main: '/images/ph1.jpg',
-      thumbnail: '/images/ph1.jpg',
+      main: '/scouts-website-REACT-SPRINGBOOT/images/ph1.jpg',
+      thumbnail: '/scouts-website-REACT-SPRINGBOOT/images/ph1.jpg',
       caption: 'Outdoor Activities'
+
     },
     {
-      main: '/images/photo.jpg',
-      thumbnail: '/images/photo.jpg',
+      main: '/scouts-website-REACT-SPRINGBOOT/images/photo.jpg',
+      thumbnail: '/scouts-website-REACT-SPRINGBOOT/images/photo.jpg',
       caption: 'Scout Ceremonies'
+
     },
     {
-      main: '/images/pl1.jpg',
-      thumbnail: '/images/pl1.jpg',
+      main: '/scouts-website-REACT-SPRINGBOOT/images/pl1.jpg',
+      thumbnail: '/scouts-website-REACT-SPRINGBOOT/images/pl1.jpg',
       caption: 'Scout Skills'
+
     },
     {
-      main: '/images/service.jpg',
-      thumbnail: '/images/service.jpg',
+      main: '/scouts-website-REACT-SPRINGBOOT/images/service.jpg',
+      thumbnail: '/scouts-website-REACT-SPRINGBOOT/images/service.jpg',
       caption: 'Community Service'
+
     },
     {
-      main: '/images/workshop.jpg',
-      thumbnail: '/images/workshop.jpg',
+      main: '/scouts-website-REACT-SPRINGBOOT/images/workshop.jpg',
+      thumbnail: '/scouts-website-REACT-SPRINGBOOT/images/workshop.jpg',
       caption: 'Scout Workshops'
     }
+
   ];
   const stats = [
     {
@@ -72,65 +80,20 @@ export default function Home() {
     }
   ];
 
-  const images = [
-    {
-      main: '/images/gallery/main1.jpg',
-      thumbnail: '/images/gallery/thumb1.jpg',
-      caption: 'Summer Camp Adventures'
-    },
-    {
-      main: '/images/gallery/main2.jpg',
-      thumbnail: '/images/gallery/thumb2.jpg',
-      caption: 'Leadership Training'
-    },
-    {
-      main: '/images/gallery/main3.jpg',
-      thumbnail: '/images/gallery/thumb3.jpg',
-      caption: 'Community Service'
-    },
-    {
-      main: '/images/gallery/main4.jpg',
-      thumbnail: '/images/gallery/thumb4.jpg',
-      caption: 'Nature Exploration'
-    },
-    {
-      main: '/images/gallery/main5.jpg',
-      thumbnail: '/images/gallery/thumb5.jpg',
-      caption: 'Team Building Activities'
-    },
-    {
-      main: '/images/gallery/main6.jpg',
-      thumbnail: '/images/gallery/thumb6.jpg',
-      caption: 'Scout Ceremonies'
-    },
-    {
-      main: '/images/gallery/main7.jpg',
-      thumbnail: '/images/gallery/thumb7.jpg',
-      caption: 'Outdoor Skills'
-    },
-    {
-      main: '/images/gallery/main8.jpg',
-      thumbnail: '/images/gallery/thumb8.jpg',
-      caption: 'International Jamboree'
-    },
-    {
-      main: '/images/gallery/main9.jpg',
-      thumbnail: '/images/gallery/thumb9.jpg',
-      caption: 'Scout Traditions'
-    }
-  ];
+
 
   const nextImage = () => {
     setCurrentImageIndex((prev) =>
-      prev === images.length - 1 ? 0 : prev + 1
+      prev === imagess.length - 1 ? 0 : prev + 1
     );
   };
 
   const previousImage = () => {
     setCurrentImageIndex((prev) =>
-      prev === 0 ? images.length - 1 : prev - 1
+      prev === 0 ? imagess.length - 1 : prev - 1
     );
   };
+
 
   return (
     <div className="relative">
@@ -140,11 +103,12 @@ export default function Home() {
         <div
           className=" inset-0 w-full h-full"
           style={{
-            backgroundImage: 'url("/images/ph1.jpg")',
+            backgroundImage: 'url("/scouts-website-REACT-SPRINGBOOT/images/ph1.jpg")',
             backgroundSize: 'cover',
             backgroundPosition: 'center',
             filter: 'brightness(0.7)'
           }}
+
         />
 
         {/* Content */}
@@ -197,10 +161,11 @@ export default function Home() {
               {/* Background world map - we'll use a semi-transparent image */}
               <div className="absolute inset-0 opacity-10">
                 <img
-                  src="/images/world-map.jpg"
+                  src="/scouts-website-REACT-SPRINGBOOT/images/world-map.jpg"
                   alt=""
                   className="w-full h-full object-cover"
                 />
+
               </div>
 
               <div className="relative z-10">
@@ -225,10 +190,11 @@ export default function Home() {
 
                   <div className="rounded-2xl overflow-hidden shadow-2xl">
                     <img
-                      src="/images/pl1.jpg"
+                      src="/scouts-website-REACT-SPRINGBOOT/images/pl1.jpg"
                       alt="Scout"
                       className="w-full h-[500px] object-cover"
                     />
+
                   </div>
                 </div>
               </div>
@@ -249,7 +215,7 @@ export default function Home() {
               <div className="space-y-4">
                 <div className="rounded-2xl overflow-hidden shadow-lg h-72">
                   <img
-                    src="/images/im1.jpg"
+                    src="/scouts-website-REACT-SPRINGBOOT/images/im1.jpg"
                     alt="Scouts working in team"
                     className="w-full h-full object-cover"
                   />
@@ -263,7 +229,7 @@ export default function Home() {
               <div className="space-y-4">
                 <div className="rounded-2xl overflow-hidden shadow-lg h-72">
                   <img
-                    src="/images/im2.jpg"
+                    src="/scouts-website-REACT-SPRINGBOOT/images/im2.jpg"
                     alt="Scouts being social"
                     className="w-full h-full object-cover"
                   />
@@ -277,10 +243,11 @@ export default function Home() {
               <div className="space-y-4">
                 <div className="rounded-2xl overflow-hidden shadow-lg h-72">
                   <img
-                    src="/images/im3.jpg"
+                    src="/scouts-website-REACT-SPRINGBOOT/images/im3.jpg"
                     alt="Scouts in nature"
                     className="w-full h-full object-cover"
                   />
+
                 </div>
                 <p className="text-xl font-semibold text-gray-800 text-center">
                   Plus engagés dans leur environnement
@@ -345,10 +312,11 @@ export default function Home() {
             <div className="md:col-span-2 lg:col-span-2 group">
               <div className="relative h-[500px] rounded-2xl overflow-hidden">
                 <img
-                  src="/images/ph1.jpg"
+                  src="/scouts-website-REACT-SPRINGBOOT/images/ph1.jpg"
                   alt="Featured Article"
                   className="w-full h-full object-cover"
                 />
+
                 <div className="absolute inset-0 bg-gradient-to-t from-black to-transparent" />
                 <div className="absolute bottom-0 p-8">
                   <h3 className="text-2xl font-bold text-white mb-3 group-hover:text-red-500 transition-colors">
@@ -366,23 +334,25 @@ export default function Home() {
             {/* Regular Articles */}
             {[
               {
-                image: '/images/im1.jpg',
+                image: '/scouts-website-REACT-SPRINGBOOT/images/im1.jpg',
                 title: 'Youth Leadership Summit: Empowering Tomorrow\'s Leaders',
                 author: 'Sarah Connor',
                 date: 'Feb 08, 2025'
               },
               {
-                image: '/images/im2.jpg',
+                image: '/scouts-website-REACT-SPRINGBOOT/images/im2.jpg',
                 title: 'International Scout Jamboree: Uniting Cultures Through Adventure',
                 author: 'John Smith',
                 date: 'Feb 07, 2025'
               },
+
               {
-                image: '/images/im3.jpg',
+                image: '/scouts-website-REACT-SPRINGBOOT/images/im3.jpg',
                 title: 'Community Service: Scouts Making a Difference',
                 author: 'Mike Johnson',
                 date: 'Feb 06, 2025'
               }
+
             ].map((article, index) => (
               <div key={index} className="group">
                 <div className="relative h-[300px] rounded-2xl overflow-hidden">
@@ -456,35 +426,38 @@ export default function Home() {
                     title: "Summer Camp 2024",
                     date: "July 15-30",
                     location: "Mountain Valley",
-                    image: "/images/camp.jpg",
+                    image: "/scouts-website-REACT-SPRINGBOOT/images/camp.jpg",
                     category: "Adventure"
                   },
                   {
                     title: "Leadership Workshop",
                     date: "June 5",
                     location: "Scout HQ",
-                    image: "/images/leadership.jpg",
+                    image: "/scouts-website-REACT-SPRINGBOOT/images/leadership.jpg",
                     category: "Training"
+
                   },
                   {
                     title: "Community Service",
                     date: "May 20",
                     location: "City Park",
-                    image: "/images/service.jpg",
+                    image: "/scouts-website-REACT-SPRINGBOOT/images/service.jpg",
                     category: "Service"
+
                   },
                   {
                     title: "Night Hiking",
                     date: "August 10",
                     location: "Forest Trail",
-                    image: "/images/hiking.jpg",
+                    image: "/scouts-website-REACT-SPRINGBOOT/images/hiking.jpg",
                     category: "Adventure"
+
                   },
                   {
                     title: "First Aid Course",
                     date: "September 1",
                     location: "Training Center",
-                    image: "/images/firstaid.jpg",
+                    image: "/scouts-website-REACT-SPRINGBOOT/images/firstaid.jpg",
                     category: "Training"
                   }
                 ].map((event, index) => (

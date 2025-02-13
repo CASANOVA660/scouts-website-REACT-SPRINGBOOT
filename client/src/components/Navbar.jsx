@@ -43,7 +43,7 @@ export default function Navbar() {
           <div className="flex justify-between items-center h-full">
             {/* Left Section - Language Selector */}
             <div className="relative">
-              <button 
+              <button
                 onClick={() => setIsLangMenuOpen(!isLangMenuOpen)}
                 className="flex items-center space-x-2 text-white hover:text-yellow-200 transition-colors"
               >
@@ -81,7 +81,7 @@ export default function Navbar() {
               <div className="flex items-center space-x-2">
                 <Link to="/" className="flex items-center">
                   <img
-                    src="/images/logo.jpg"
+                    src="/scouts-website-REACT-SPRINGBOOT/images/logo.jpg"
                     alt="Scouts Logo"
                     className="h-8 w-auto"
                   />
@@ -130,10 +130,11 @@ export default function Navbar() {
             <div className="flex items-center space-x-2">
               <Link to="/" className="flex items-center">
                 <img
-                  src="/images/logo.jpg"
+                  src="/scouts-website-REACT-SPRINGBOOT/images/logo.jpg"
                   alt="Scouts Logo"
                   className="h-12 w-auto"
                 />
+
               </Link>
               <span className="text-gray-700 font-medium">|</span>
               <span className="text-gray-700 font-medium">Sodwicks Scouts</span>
